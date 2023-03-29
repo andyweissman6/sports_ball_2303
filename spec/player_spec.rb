@@ -12,6 +12,8 @@ RSpec.describe Player do
     player = Player.new("Michael Palledorous" , 1000000, 36)
 
     expect(player.first_name).to eq("Michael")
+require 'pry'; binding.pry
+
   end
 
   it 'has a last name' do
@@ -37,4 +39,11 @@ RSpec.describe Player do
 
     expect(player.total_cost).to eq(36000000)
   end
+
+  it 'has a nickname' do
+    player = Player.new("Michael Palledorous" , 1000000, 36)
+    expect(player.set_nickname!("Squints")).to eq("Squints")
+  end
+
+  
 end
