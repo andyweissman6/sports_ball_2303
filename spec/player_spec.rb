@@ -12,7 +12,7 @@ RSpec.describe Player do
     player = Player.new("Michael Palledorous" , 1000000, 36)
 
     expect(player.first_name).to eq("Michael")
-require 'pry'; binding.pry
+    # require 'pry'; binding.pry
 
   end
 
@@ -45,5 +45,5 @@ require 'pry'; binding.pry
     expect(player.set_nickname!("Squints")).to eq("Squints")
   end
 
-  
+
 end

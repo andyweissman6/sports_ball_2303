@@ -42,7 +42,7 @@ RSpec.describe Team do
     team.add_player(player_2)
     team.add_player(player_3)
     team.add_player(player_4)
-# require 'pry'; binding.pry
+  # require 'pry'; binding.pry
    
 
   end

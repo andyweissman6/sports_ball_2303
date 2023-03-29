@@ -16,12 +16,12 @@ class Team
   def add_player(new_player)
     roster << new_player
   end
-
+  
   def long_term_players
-    if @contract_length > 24
-      return @player
-    end
-    
+    require 'pry'; binding.pry
+    @player.contract_length > 24
+     
+  
   end
 
 
